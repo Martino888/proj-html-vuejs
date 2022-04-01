@@ -66,6 +66,9 @@ export default {
     width: 100%;
   }
 
+    ul{
+      margin-bottom: 0rem;
+  }
     li{
       display:inline-block;
       padding: 15px;
@@ -101,7 +104,8 @@ export default {
       }}
 
     .btn{
-      background-color: rgb(255, 123, 0);
+      background-color: rgba($color: #f26f28, $alpha: 0.3);
+      color:#f76210;
       padding: 5px;
       padding-left: 30px;
       padding-right: 30px;

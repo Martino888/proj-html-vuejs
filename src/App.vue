@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <HeaderAvada></HeaderAvada>
+    <MainAvada></MainAvada>
   </div>
 </template>
 
 <script>
 import HeaderAvada from './components/HeaderAvada.vue'
+import MainAvada from './components/MainAvada.vue'
 export default {
   name: 'App',
   components: {
-    HeaderAvada
+    HeaderAvada,
+    MainAvada
   }
 }
 </script>
