@@ -111,4 +111,8 @@ export default {
       padding-right: 30px;
     }
 
+    .btn:hover {
+      background-color:#f76210;
+    }
+
 </style>
