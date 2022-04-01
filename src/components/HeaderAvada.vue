@@ -21,11 +21,11 @@ export default {
             links:[
                 {
                 href: '#',
-                text: 'Home'
+                text: 'Home ˅'
             },
             {
                 href: '#',
-                text: 'Service'
+                text: 'Service ˅'
             },
             {
                 href: '#',
