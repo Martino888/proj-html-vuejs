@@ -45,8 +45,7 @@ export default {
         background-size: 100%;
         height: 550px;
         justify-content: space-between;
-        background-image: url(@/assets/images/marketing-intro.jpg);
-        // background-image: linear-gradient(to right, rgb(0, 87, 128) 15%,rgb(236, 129, 14) 100%),
+        background-image: linear-gradient(to right, rgb(0, 87, 128) 15%,rgb(236, 129, 14) 100%),
     }
 
     h1{
@@ -68,6 +67,7 @@ export default {
     .title{
         padding: 75px;
         margin-left: 65px;
+
     }
 
     form {
