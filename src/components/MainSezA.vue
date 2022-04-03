@@ -8,11 +8,10 @@
                     <p> O Business Growth </p>
                     <h1>Increrease Brand <br> Awareness</h1>
                     <p class="p">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolores non quia omnis error maxime dolorem ea deleniti,
-                        impedit et vero facere.
-                        Tenetur saepe incidunt earum non ipsam! Corrupti,
-                        quis nihil?
+                        Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit. Sed auctor placerat <br>
+                        luctus. Nullam sit amet ante sed orci <br>
+                        convallis gravida et at massa.
                     </p>
                     <button class="btn">Get a Consultation</button>
                 </div>
@@ -22,11 +21,10 @@
                     <p class=""> O Business Growth </p>
                     <h1>In-House Sales <br> Training</h1>
                     <p class="p">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolores non quia omnis error maxime dolorem ea deleniti,
-                        impedit et vero facere.
-                        Tenetur saepe incidunt earum non ipsam! Corrupti,
-                        quis nihil?
+                        Lorem ipsum dolor sit amet,consectetur <br>
+                        adipiscing elit. Sed auctor placerat luctus.<br>
+                        Nullam sit amet ante sed orci convallis<br>
+                        gravida et at massa.
                     </p>
                     <button class="btn">Get a Consultation</button>
                 </div>
@@ -42,11 +40,10 @@
                     <p class=""> O Business Growth </p>
                     <h1>Increrease Brand <br> Awareness</h1>
                     <p class="p">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolores non quia omnis error maxime dolorem ea deleniti,
-                        impedit et vero facere.
-                        Tenetur saepe incidunt earum non ipsam! Corrupti,
-                        quis nihil?
+                        Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit. Sed auctor <br>
+                        placerat luctus. Nullam sit amet ante <br>
+                        sed orci convallis gravida et at massa.
                     </p>
                     <button class="btn">Get a Consultation</button>
                 </div>
@@ -63,11 +60,13 @@
                 <img class="imgsoc" src="@/assets/images/spaces.png" alt="logo society">
                 <img class="imgsoc" src="@/assets/images/digitalbox.png" alt="logo society">
             </div>
-            <div class="d-flex bag">
+            <div class="d-flex bag  d-flex justify-content-around align-items-center">
                 <div class="d-flex">
-                    <img class="circle" src="@/assets/images/marketing-consultant-expert.jpg" alt="">
-                    <h6>Sandy Reiff</h6>
-                    <p class="font">Marketing Consultant Expert</p>
+                    <img class="circle" src="@/assets/images/marketing-expert-cta.png" alt="">
+                    <div class="margin">
+                        <h6>Sandy Reiff</h6>
+                        <p class="font">Marketing Consultant Expert</p>
+                    </div>
                 </div>
                 <div>
                     <h5>Drive leads and Sales whid Avada</h5>
@@ -76,7 +75,6 @@
                     <button class="btn">📞 (555)802-1234</button>
                 </div>
             </div>
-
         </div>
 </template>
 
@@ -112,8 +110,8 @@ export default {
 <style lang="scss" scoped>
 
 .bag{
-    border: 1px solid black;
-    box-shadow: 1px 1px 1px 1px #f5f3f3;
+    box-shadow: 0px 7px 18px 0px #dbd6d6;
+    border-radius: 8px;
 }
 
 .container {
@@ -141,13 +139,16 @@ img{
 }
 
 .btn{
-    min-width: 200px;
-    height:50px;
-    background-color: #f76210;
-    color: white;
-    border-radius: 10px;
-    border:none;
+    background-color: #f26f28;
+    color:white;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
+.btn:hover {
+    background-color:#f76210;
+    }
 
 .titledown{
     display: grid;
@@ -179,5 +180,14 @@ img{
         height: 50px;
         border-radius: 50px;
         border-radius: 50px;
+        margin-top:15px;
     }
+
+.margin{
+    padding: 20px 0px 0px 15px;
+}
+
+h6{
+    margin-bottom: 0;
+}
 </style>
