@@ -5,7 +5,7 @@
     <MainSezA></MainSezA>
     <MainSezB></MainSezB>
     <MainSezC></MainSezC>
-
+    <MainSezD></MainSezD>
   </div>
 </template>
 
@@ -15,6 +15,7 @@ import MainAvada from './components/MainAvada.vue'
 import MainSezA from './components/MainSezA.vue'
 import MainSezB from './components/MainSezB.vue'
 import MainSezC from './components/MainSezC.vue'
+import MainSezD from './components/MainSezD.vue'
 export default {
   name: 'App',
   components: {
@@ -22,7 +23,8 @@ export default {
     MainAvada,
     MainSezA,
     MainSezB,
-    MainSezC
+    MainSezC,
+    MainSezD
   }
 }
 </script>

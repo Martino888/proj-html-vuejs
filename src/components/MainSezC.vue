@@ -142,7 +142,7 @@ export default {
 }
 
 .imgsoc{
-    width: 150px;
+    width: 120px;
 }
 
 .align{
