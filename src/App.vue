@@ -8,6 +8,7 @@
     <MainSezD></MainSezD>
     <MainSezE></MainSezE>
     <MainSezF></MainSezF>
+    <FooterAvada></FooterAvada>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import MainSezC from './components/MainSezC.vue'
 import MainSezD from './components/MainSezD.vue'
 import MainSezE from './components/MainSezE.vue'
 import MainSezF from './components/MainSezF.vue'
+import FooterAvada from './components/FooterAvada.vue'
 export default {
   name: 'App',
   components: {
@@ -31,6 +33,7 @@ export default {
     MainSezD,
     MainSezE,
     MainSezF,
+    FooterAvada
   }
 }
 </script>

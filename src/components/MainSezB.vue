@@ -4,23 +4,11 @@
             Trusted by Leading Organisations
         </h1>
         <div class="d-flex justify-content-between">
-            <div>
-                <img src="@/assets/images/case-studies-1-1200x1349.jpg" alt="">
-                <h4> How Spacesattrached five million visitors by improving the content </h4>
-                <h1>200%</h1>
-                <p>Higher revenue from digital </p>
-                </div>
-            <div>
-                <img src="@/assets/images/case-studies-4-1200x1349.jpg" alt="">
-                <h4>Creativity helped <br> Hemisferio to increase their breand reach vertically </h4>
-                <h1>10x</h1>
-                <p>Sales increase with the same ad spend </p>
-            </div>
-                <div>
-                <img src="@/assets/images/case-studies-6-1200x1349.jpg" alt="">
-                <h4> How  DigitalBox used Al-powered data insight to boost sales</h4>
-                <h1>3-year</h1>
-                <p>Higher revenue from digital </p>
+            <div v-for="element in arrImg" :key="element.id">
+                <img :src="element.img" alt="">
+                <h4>{{element.title}}</h4>
+                <h1>{{element.num}}</h1>
+                <p>{{element.description}}</p>
             </div>
         </div>
         <div class="position">
@@ -31,7 +19,38 @@
 </template>
 
 <script>
+import img1 from "@/assets/images/case-studies-1-1200x1349.jpg"
+import img2  from "@/assets/images/case-studies-4-1200x1349.jpg"
+import img3 from "@/assets/images/case-studies-6-1200x1349.jpg"
 export default {
+    name: "MainSezB",
+        data () {
+            return {
+                arrImg:[
+                    {
+                        id: 1,
+                        img:img1,
+                        title:'How Spacesattrached five million visitors by improving the content',
+                        num:'200%',
+                        description:'Higher revenue from digital',
+                    },
+                    {
+                        id: 1,
+                        img:img2,
+                        title:`Creativity helped Hemisferio to increase their breand reach vertically `,
+                        num:'10x',
+                        description:'Sales increase with the same ad spend',
+                    },
+                    {
+                        id: 1,
+                        img:img3,
+                        title:'How  DigitalBox used Al-powered data insight to boost sales',
+                        num: '3-year',
+                        description:'Higher revenue from digital',
+                    }
+                ]
+            }
+        }
 
 }
 </script>
@@ -48,7 +67,7 @@ img {
 }
 
 h4{
-    width: 350px;
+    width: 330px;
     margin-top:15px;
 }
 

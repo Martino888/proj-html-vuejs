@@ -1,23 +1,33 @@
 <template>
     <div class="container d-flex justify-content-centre">
         <div>
-            <img class="boximg" src="@/assets/images/large-testimonial-1200x1166.jpg" alt="">
+            <img class="boximg" :src="object.img" alt="">
         </div>
         <div>
-            <h3>
-                “The team at Avada Marketing Consultant is fabulous.
-                They helped us unlock our potential online and offline.
-                We have experienced year on year growth due to
-                their progressive approach.”
-            </h3>
-            <h5>Kate Schadler</h5>
-            <p>Marketing Consultant - Abstract</p>
+            <h3>{{ object.description }}</h3>
+            <h5>{{ object.name }}</h5>
+            <p>{{ object.position}}</p>
         </div>
     </div>
 </template>
 
 <script>
+import img from "@/assets/images/large-testimonial-1200x1166.jpg"
 export default {
+    name: "MainSezD",
+        data () {
+            return {
+                object:{
+                    img:img,
+                    description:`“The team at Avada Marketing Consultant is fabulous.
+                                They helped us unlock our potential online and offline.
+                                We have experienced year on year growth due to
+                                their progressive approach.”`,
+                    name: 'Kate Schadler',
+                    position:'Marketing Consultant - Abstract'
+                }
+            }
+        }
 
 }
 </script>

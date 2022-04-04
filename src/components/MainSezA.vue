@@ -62,12 +62,7 @@
                 <p class="p2">Quisque aliquet, libero consequat elementum convallis.</p>
             </div>
             <div class="society">
-                <img class="imgsoc" src="@/assets/images/abstract.png" alt="logo society">
-                <img class="imgsoc" src="@/assets/images/cglobal.png" alt="logo society">
-                <img class="imgsoc" src="@/assets/images/next.png" alt="logo society ">
-                <img class="imgsoc" src="@/assets/images/hemisferio.png" alt="logo society">
-                <img class="imgsoc" src="@/assets/images/spaces.png" alt="logo society">
-                <img class="imgsoc" src="@/assets/images/digitalbox.png" alt="logo society">
+                    <img class="imgsoc"  v-for="link in links" :key="link.img" :src="link.img" />
             </div>
             <div class="d-flex bag  d-flex justify-content-around align-items-center">
                 <div class="d-flex">
@@ -88,27 +83,33 @@
 </template>
 
 <script>
+import society1 from"../assets/images/abstract.png"
+import society2 from"@/assets/images/cglobal.png"
+import society3 from"@/assets/images/next.png"
+import society4 from"@/assets/images/hemisferio.png"
+import society5 from"@/assets/images/spaces.png"
+import society6 from"@/assets/images/digitalbox.png"
 export default {
     data () {
         return {
             links:[
                 {
-                img:"@/assets/images/abstract.jpg"
+                img:society1
             },
             {
-                img: "@/assets/images/cglobal.png"
+                img: society2
             },
             {
-                img:"@/assets/images/next.png"
+                img:society3
             },
             {
-                img:"@/assets/images/hemisferio.png"
+                img:society4
             },
             {
-                img:"@/assets/images/spaces.png"
+                img:society5
             },
             {
-                img:"@/assets/images/digitalbox.png"
+                img:society6
             }
         ]
         }
@@ -198,11 +199,12 @@ img{
 .society {
     display: flex;
     justify-content: space-between;
-    margin:2em 0 7em 0
+    margin:2em 0 7em 0;
+
 }
 
 .imgsoc{
-    width: 100px;
+    width: 120px;
 }
 
 .font{

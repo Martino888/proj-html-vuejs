@@ -33,7 +33,8 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-    background-image: linear-gradient(to top, rgb(241, 238, 238)  10%, #e3e4e2 90%),
+    background-image: linear-gradient(to top, rgb(241, 238, 238)  10%, #e3e4e2 90%);
+    height:750px;
 }
 
 .title{

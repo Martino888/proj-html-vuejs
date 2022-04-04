@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid">
         <div class="container d-flex justify-content-between">
             <div class="title">
                 <h1 class="bold bottom">Let’s Make Things Happen</h1>
@@ -33,11 +33,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.container-fluid{
+    background-color:black;
+    height: 700px;
+}
 .title{
     width: 480px;
     color: white;
-    margin: 80px 0 0 0;
+    margin: 100px 0 0 0;
 }
 
 .bottom{
@@ -64,7 +67,7 @@ export default {
         background-color: white;
         justify-items: center;
         display: grid;
-        margin-top: 70px;
+        margin-top: 90px;
         box-shadow: 1px 1px 1px 1px #f5f3f3;
         margin-right: 30px;
         margin-left: 30px;
