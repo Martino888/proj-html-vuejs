@@ -1,6 +1,6 @@
 <template>
     <div class="container d-flex justify-content-centre">
-        <div >
+        <div>
             <img class="boximg" src="@/assets/images/large-testimonial-1200x1166.jpg" alt="">
         </div>
         <div>
@@ -24,16 +24,18 @@ export default {
 
 <style lang="scss" scoped>
 
+
 .boximg{
     width: 550px;
     height: 500px;
-    border-radius: 8px;
-    margin: 80px 0px 0px 0;
+    border-radius: 10px;
+    margin: 80px 0px 80px 30px;
+
 }
 
 h3{
     width: 420px;
-    margin: 150px 0px 0px 100px;
+    margin: 140px 0px 0px 100px;
 }
 
 h5{
