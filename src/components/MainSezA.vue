@@ -5,7 +5,10 @@
                     <img src="@/assets/images/screen1.jpg">
                 </div>
                 <div class="boxs">
-                    <p> O Business Growth </p>
+                    <div class="d-flex">
+                        <div class="icon"></div>
+                        <p> Business Growth </p>
+                    </div>
                     <h1>Increrease Brand <br> Awareness</h1>
                     <p class="p">
                         Lorem ipsum dolor sit amet, consectetur<br>
@@ -18,7 +21,10 @@
             </div>
             <div class="x d-flex">
                 <div class="boxs boxsex2">
-                    <p class=""> O Business Growth </p>
+                    <div class="d-flex">
+                        <div class="icon2"></div>
+                        <p> Investors In People</p>
+                    </div>
                     <h1>In-House Sales <br> Training</h1>
                     <p class="p">
                         Lorem ipsum dolor sit amet,consectetur <br>
@@ -37,7 +43,10 @@
                     <img src="@/assets/images/screen3.jpg">
                 </div>
                 <div class="boxs">
-                    <p class=""> O Business Growth </p>
+                    <div class="d-flex">
+                        <div class="icon3"></div>
+                        <p>Social Media Analysis </p>
+                    </div>
                     <h1>Increrease Brand <br> Awareness</h1>
                     <p class="p">
                         Lorem ipsum dolor sit amet,<br>
@@ -117,6 +126,7 @@ export default {
 .container {
     margin-top:5em;
 }
+
 .boxs{
     width: 550px;
     margin: 0 24px 200px 24px;
@@ -129,6 +139,30 @@ export default {
 img{
     width: 500px;
 }
+
+.icon{
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.icon2{
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+.icon3{
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
 
 .imgsez2{
     margin-left: -170px;
@@ -176,12 +210,12 @@ img{
 }
 
 .circle {
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        border-radius: 50px;
-        margin-top:15px;
-    }
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-radius: 50px;
+    margin-top:15px;
+}
 
 .margin{
     padding: 20px 0px 0px 15px;
