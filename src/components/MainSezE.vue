@@ -53,9 +53,72 @@ img {
     width: 350px;
 }
 
-h5{
-    width: 300px;
+h4{
+    width: 350px;
+    margin-top: 1em;
 }
 
+    form {
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        background-color: white;
+        justify-items: center;
+        display: grid;
+        margin-top: 70px;
+        box-shadow: 1px 1px 1px 1px #f5f3f3;
+        margin-right: 30px;
+        margin-left: 30px;
+}
 
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+
+    h5{
+        margin: 0;
+    }
+
+    .expert{
+        color:gray;
+    }
+
+    .numform{
+        color: #f76210;
+    }
+
+    .formbtn {
+        min-width: 350px;
+        height:40px;
+        background-color: #f76210;
+        color: white;
+        border-radius: 10px;
+        border:none;
+    }
+    input{
+        width: 350px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .submit{
+        color:grey;
+        font-size: x-small;
+    }
+
+    .square{
+        margin: 5px;
+        display:flex;
+        flex-direction: column;
+        height: 70px;
+        width: 80px;
+        background: #f5f3f3;
+        border-radius: 7px;
+        font-size: x-small;
+        justify-content: end;
+    }
 </style>

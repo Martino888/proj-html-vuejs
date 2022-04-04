@@ -7,6 +7,7 @@
     <MainSezC></MainSezC>
     <MainSezD></MainSezD>
     <MainSezE></MainSezE>
+    <MainSezF></MainSezF>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import MainSezB from './components/MainSezB.vue'
 import MainSezC from './components/MainSezC.vue'
 import MainSezD from './components/MainSezD.vue'
 import MainSezE from './components/MainSezE.vue'
+import MainSezF from './components/MainSezF.vue'
 export default {
   name: 'App',
   components: {
@@ -27,7 +29,8 @@ export default {
     MainSezB,
     MainSezC,
     MainSezD,
-    MainSezE
+    MainSezE,
+    MainSezF,
   }
 }
 </script>
