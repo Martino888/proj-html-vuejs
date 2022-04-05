@@ -9,9 +9,9 @@
             </div>
             <div class="logosm">
                 <ul class="icons d-flex">
-                    <li><i class="fa-brands fa-facebook-f">1</i></li>
-                    <li><i class="fa-brands fa-twitter">2</i></li>
-                    <li><i class="fa-brands fa-youtube">3</i></li>
+                    <li><font-awesome-icon icon="fa-brands fa-facebook-f"/></li>
+                    <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
+                    <li><i class="fa-brands fa-youtube">4</i></li>
                     <li><i class="fa-brands fa-instagram">4</i></li>
                     <li><i class="fa-brands fa-instagram">5</i></li>
                 </ul>

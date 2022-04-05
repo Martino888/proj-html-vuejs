@@ -1,8 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="title">
-            Trusted by Leading Organisations
-        </h1>
+        <h1 class="title">{{object1.title}}</h1>
         <div class="d-flex justify-content-between">
             <div v-for="element in arrImg" :key="element.id">
                 <img :src="element.img" alt="">
@@ -12,7 +10,7 @@
             </div>
         </div>
         <div class="position">
-            <button class="btn">Read More Case Studies</button>
+            <button class="btn">{{object.button}}</button>
         </div>
 
     </div>
@@ -26,6 +24,9 @@ export default {
     name: "MainSezB",
         data () {
             return {
+                object1: {
+                    title:'Trusted by Leading Organisations'
+                },
                 arrImg:[
                     {
                         id: 1,
@@ -48,7 +49,10 @@ export default {
                         num: '3-year',
                         description:'Higher revenue from digital',
                     }
-                ]
+                ],
+                object: {
+                    button: 'Read More Case Studies'
+                }
             }
         }
 

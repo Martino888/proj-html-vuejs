@@ -20,34 +20,16 @@
                 <h4>{{object2.title2}}</h4>
                 <p>{{object2.paragraph2}}</p>
             </div>
-            <div class="squar">
+            <div class="x">
+                <div v-for="element in arrElements" :key="element.id" class="squar">
                 <div class="d-flex">
-                    <div class="circle">
-                        <!-- <i class="bi bi-layout-sidebar"></i> -->
-                    </div>
+                    <div class="circle"><font-awesome-icon icon="fa-solid fa-arrow-left-long" /></div>
                     <div>
-                        <h4>Accountability</h4>
-                        <p>Curabitur ac leo nunc vestibulum</p>
+                        <h4>{{element.title}}</h4>
+                        <p>{{element.paragraph}}</p>
                     </div>
                 </div>
-                    <div class="d-flex">
-                    <div class="circle">
-                        <!-- <i class="bi bi-layout-sidebar"></i> -->
-                    </div>
-                    <div>
-                        <h4>Transparency</h4>
-                        <p>Curabitur ac leo nunc vestibulum</p>
-                    </div>
-                </div>
-                    <div class="d-flex">
-                    <div class="circle">
-                        <!-- <i class="bi bi-layout-sidebar"></i> -->
-                    </div>
-                    <div>
-                        <h4>Investment</h4>
-                        <p>Curabitur ac leo nunc vestibulum</p>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
         <h3 class="title">
@@ -106,12 +88,35 @@ export default {
                 title2: 'Proprietary Processes',
                 paragraph2:"Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur",
             },
+            arrElements: [
+                {
+                    id: 1,
+                    title:'Accountability',
+                    paragraph:'Curabitur ac leo nunc vestibulum',
+                },
+                {
+                    id: 2,
+                    title:'Transparency',
+                    paragraph:'Curabitur ac leo nunc vestibulum',
+                },
+                {
+                    id: 3,
+                    title:'Investment',
+                    paragraph:'Curabitur ac leo nunc vestibulum',
+                },
+            ]
         }
     }
 }
 </script>
 
 <style lang="scss" scoped>
+
+.x{
+    display:flex;
+    flex-direction:column;
+    margin: 120px 160px 0 0px ;
+}
 
 .container-fluid {
     height:1400px ;
@@ -121,6 +126,7 @@ export default {
 .box{
     width: 420px;
     margin: 120px 0px 0px 50px;
+    flex: 0 0 auto;
 }
 
 .btn{
@@ -147,9 +153,7 @@ export default {
     border: 2px solid orangered
 }
 
-.squar {
-    margin: 120px 160px 0 0px ;
-}
+
 
 .title {
     display: grid;
