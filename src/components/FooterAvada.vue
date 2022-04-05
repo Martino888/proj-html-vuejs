@@ -40,7 +40,7 @@
             <p class="p2">info@yourcompany.com</p>
         </div>
     </div>
-    <div class="icon"></div>
+    <div class="icon"><font-awesome-icon class="icon-message" icon="fa-solid fa-message" /></div>
 </div>
 
 </template>
@@ -160,5 +160,11 @@ p {
     height: 50px;
     border-radius: 50px;
     margin-right: 5px;
+}
+
+.icon-message{
+    color: white;
+    justify-content: center;
+    margin: 18px 0px 0px 16px;
 }
 </style>
