@@ -3,27 +3,22 @@
         <div class="container">
             <div class="d-flex justify-content-between">
                 <div class="box">
-                    <h1>We Boost Our <br> Clients' Bottom Line <br> by Optimizing Their <br> Growth Potenzial.</h1>
-                    <p>Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet pellentesque <br> sem neque eget.</p>
-                    <button class="btn"> Why Work With Us </button>
+                    <h1>{{object.title}}</h1>
+                    <p>{{object.paragraph}}</p>
+                    <buttonq class="btn"> {{object.button}} </buttonq>
                 </div>
                 <div>
-                    <img class="boximg" src="@/assets/images/we-boost-our-clients-800x732.jpg" alt="">
+                    <img class="boximg" :src="object.img" alt="">
                 </div>
             </div>
         </div>
         <div class="container d-flex justify-content-between">
             <div class="box">
-                <h4>We Build Relationships</h4>
-                <p>
-                    Curabitur ac leo nunc. Vestibulum et mauris vel ante <br>
-                    finibus maximus nec ut leo. Integer consectetur.
-                </p>
+                <h4>{{object2.title}}</h4>
+                <p>{{object2.paragraph}}</p>
                 <br>
-                <h4>Proprietary Processes</h4>
-                <p>
-                    Curabitur ac leo nunc. Vestibulum et mauris vel ante <br>
-                    finibus maximus nec ut leo. Integer consectetur.</p>
+                <h4>{{object2.title2}}</h4>
+                <p>{{object2.paragraph2}}</p>
             </div>
             <div class="squar">
                 <div class="d-flex">
@@ -58,6 +53,11 @@
         <h3 class="title">
             Awards
         </h3>
+
+        <!-- <div class="society">
+            <img class="imgsoc"  v-for="link in links" :key="link.img" :src="link.img" />
+        </div> -->
+
         <div class="society ">
             <div class="align">
                 <img class="imgsoc" src="@/assets/images/award-a.png" alt="logo society">
@@ -84,8 +84,30 @@
 </template>
 
 <script>
-export default {
+import img from "@/assets/images/we-boost-our-clients-800x732.jpg"
+// import img1 from "@/assets/images/award-a.png"
+// import img2 from "@/assets/images/award-b.png"
+// import img3 from "@/assets/images/award-c.png"
+// import img4 from "@/assets/images/award-d.png"
 
+export default {
+    name: "MainSezC",
+    data () {
+        return {
+            object: {
+                title: "We Boost Our Clients' Bottom Line by Optimizing Their Growth Potenzial.",
+                paragraph:'Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet pellentesque sem neque eget.',
+                button:'Why Work With Us',
+                img:img
+            },
+            object2:{
+                title: 'We Build Relationships',
+                paragraph: "Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur",
+                title2: 'Proprietary Processes',
+                paragraph2:"Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur",
+            },
+        }
+    }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
         <div class="container">
-            <div class="x d-flex" >
+            <div class=" d-flex" >
                 <div class="boxs">
                     <img src="@/assets/images/screen1.jpg">
                 </div>
@@ -19,7 +19,7 @@
                     <button class="btn">Get a Consultation</button>
                 </div>
             </div>
-            <div class="x d-flex">
+            <div class=" d-flex">
                 <div class="boxs boxsex2">
                     <div class="d-flex">
                         <div class="icon2"></div>
@@ -38,7 +38,7 @@
                     <img  src="@/assets/images/screen2.jpg">
                 </div>
             </div>
-            <div class="x d-flex" >
+            <div class=" d-flex" >
                 <div class="boxs">
                     <img src="@/assets/images/screen3.jpg">
                 </div>
@@ -66,17 +66,17 @@
             </div>
             <div class="d-flex bag  d-flex justify-content-around align-items-center">
                 <div class="d-flex">
-                    <img class="circle" src="@/assets/images/marketing-expert-cta.png" alt="">
+                    <img class="circle" :src="object.img" alt="">
                     <div class="margin">
-                        <h6>Sandy Reiff</h6>
-                        <p class="font">Marketing Consultant Expert</p>
+                        <h6>{{object.nome}}</h6>
+                        <p class="font">{{object.position}}</p>
                     </div>
                 </div>
                 <div>
-                    <h5>Drive leads and Sales whid Avada</h5>
+                    <h5>{{object.expert}}</h5>
                 </div>
                 <div>
-                    <button class="btn">📞 (555)802-1234</button>
+                    <button class="btn">{{object.info}}</button>
                 </div>
             </div>
         </div>
@@ -89,6 +89,7 @@ import society3 from"@/assets/images/next.png"
 import society4 from"@/assets/images/hemisferio.png"
 import society5 from"@/assets/images/spaces.png"
 import society6 from"@/assets/images/digitalbox.png"
+import imgx from "@/assets/images/marketing-expert-cta.png"
 export default {
     data () {
         return {
@@ -111,7 +112,14 @@ export default {
             {
                 img:society6
             }
-        ]
+        ],
+        object:{
+            img:imgx,
+            nome:'Sandy Reiff',
+            position:'Marketing Consultant Expert',
+            expert:'Drive leads and Sales whid Avada',
+            info:'📞 (555)802-1234',
+        }
         }
     }
 }
