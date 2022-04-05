@@ -2,32 +2,52 @@
     <div class="container-fluid">
         <div class="container d-flex justify-content-between">
             <div class="title">
-                <h1>Marketing Resources: Insider Advice on How to Increase Online Sales</h1>
+                <h1>{{object.title}}</h1>
             </div>
             <div>
-                <button class="btn">Exsplore All Resources</button>
+                <button class="btn">{{object.button}}</button>
             </div>
         </div>
         <div class="container d-flex justify-content-between">
-                <div>
-                    <img src="@/assets/images/blog-posts-6.jpg" alt="">
-                    <h4>Marketing Tips And Tricks For Your Website</h4>
-                </div>
-                <div>
-                    <img src="@/assets/images/blog-posts-5.jpg" alt="">
-                    <h4>How to Write Stunning Blog Post Titles</h4>
-                </div>
-                <div>
-                    <img src="@/assets/images/blog-posts-4.jpg" alt="">
-                    <h4>Techniques to Reduce Facebook Ads Spend</h4>
-                </div>
+            <div v-for="(element,index) in arrCards" :key="index.id" >
+                <img :src="element.img" alt="">
+                <h4>{{element.description}}</h4>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import blog6 from "@/assets/images/blog-posts-6.jpg"
+import blog5 from "@/assets/images/blog-posts-5.jpg"
+import blog4 from "@/assets/images/blog-posts-4.jpg"
 export default {
-
+    name:'MainSezE',
+        data () {
+            return {
+                object: {
+                    title: 'Marketing Resources: Insider Advice on How to Increase Online Sales',
+                    button:'Exsplore All Resources',
+                },
+                arrCards: [
+                {
+                    id: '1',
+                    img: blog6,
+                    description:'Marketing Tips And Tricks For Your Website',
+                },
+                {
+                    id: '2',
+                    img: blog5,
+                    description:'How to Write Stunning Blog Post Titles',
+                },
+                {
+                    id: '3',
+                    img: blog4,
+                    description:'Techniques to Reduce Facebook Ads Spend',
+                },
+            ]
+        }
+    }
 }
 </script>
 

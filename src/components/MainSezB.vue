@@ -35,14 +35,14 @@ export default {
                         description:'Higher revenue from digital',
                     },
                     {
-                        id: 1,
+                        id: 2,
                         img:img2,
                         title:`Creativity helped Hemisferio to increase their breand reach vertically `,
                         num:'10x',
                         description:'Sales increase with the same ad spend',
                     },
                     {
-                        id: 1,
+                        id: 3,
                         img:img3,
                         title:'How  DigitalBox used Al-powered data insight to boost sales',
                         num: '3-year',
