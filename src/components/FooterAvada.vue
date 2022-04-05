@@ -8,12 +8,13 @@
                 </h4>
             </div>
             <div class="logosm">
-                <ul class="icons d-flex">
-                    <li><font-awesome-icon icon="fa-brands fa-facebook-f"/></li>
-                    <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
-                    <li><i class="fa-brands fa-youtube">4</i></li>
-                    <li><i class="fa-brands fa-instagram">4</i></li>
-                    <li><i class="fa-brands fa-instagram">5</i></li>
+                <ul class=" d-flex">
+                    <li class="icons"><font-awesome-icon icon="fa-brands fa-facebook-f"/></li>
+                    <li class="icons"><font-awesome-icon icon="fa-brands fa-twitter" /></li>
+                    <li class="icons"><font-awesome-icon icon="fa-brands fa-instagram" /></li>
+                    <li class="icons"><font-awesome-icon icon="fa-brands fa-youtube" /></li>
+                    <li class="icons"><font-awesome-icon icon="fa-brands fa-linkedin" /></li>
+                    <li class="icons"><font-awesome-icon icon="fa-brands fa-tiktok" /></li>
                 </ul>
                 <p class="p1">© 2020 • Avada Consultant • Powered by WordPress</p>
             </div>
@@ -141,11 +142,15 @@ p {
 }
 
 .p1{
-    margin-top: 191px;
+    margin-top: 200px;
 }
 
 .p2{
     margin-top: 207px;
+}
+
+.icons{
+    margin:17px 17px 0 0px;
 }
 
 .icon{
